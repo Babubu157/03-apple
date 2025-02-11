@@ -58,6 +58,11 @@
 
 .hero__airpods {
   background-image: url(./images/airpods.png);
+  background-repeat: no-repeat;
+}
+
+.hero__iwatch {
+  background-image: url(./images/);
 }
 
 .hero__text {
