@@ -129,7 +129,8 @@ h3,
   color: #000000;
 }
 
-.apple-logo {
+.apple-logo,
+.card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -331,12 +332,12 @@ h3,
   padding: 0px 40px;
 }
 
-.prod__trade-in {
+.prod__trade-in,
+.prod__card {
   background-image: url(./images/tradein.png);
   padding-top: 51px;
 }
-.prod__trade-in__title {
-}
+
 .prod__trade-in__title p {
   padding: 0px 53px;
 }
@@ -779,5 +780,10 @@ h3,
 
   .prod__card {
     background-image: url(./images/card);
+  }
+
+  .apple-logo h3,
+  .card h3 {
+    color: #1d1d1f;
   }
 }
