@@ -491,23 +491,53 @@ h3,
 } */
 
 .animation {
+  width: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: center;
   overflow: scroll;
+  align-items: center;
 }
 
-.movie__container__phone {
+.panel {
+  width: 274px;
+  height: 495px;
+}
+.panel1 {
+  background-image: url(./images/panel1.png);
+}
+
+.panel2 {
+  background-image: url(./images/panel2.png);
+}
+.panel3 {
+  background-image: url(./images/panel3.png);
+}
+.panel4 {
+  background-image: url(./images/panel4.png);
+}
+.panel5 {
+  background-image: url(./images/panel5.png);
+}
+.panel6 {
+  background-image: url(./images/panel6.png);
+}
+.panel7 {
+  background-image: url(./images/panel7.png);
+}
+.panel8 {
+  background-image: url(./images/panel8.png);
+}
+.panel9 {
+  display: none;
+}
+.panel10 {
+  display: none;
+}
+
+.movie__container {
   display: flex;
   gap: 16px;
-  overflow: scroll;
-  margin-bottom: 16px;
-}
-
-.movie__container__tablet {
-  display: none;
-  gap: 16px;
-  overflow: scroll;
+  overflow: hidden;
   margin-bottom: 16px;
 }
 
@@ -518,6 +548,8 @@ h3,
 
 .show {
   overflow: hidden;
+  width: 100%;
+  min-width: 390px;
 }
 .content_container {
   display: flex;
@@ -527,15 +559,21 @@ h3,
   display: flex;
   flex-direction: row;
   gap: 6px;
-  animation: tv_content 10s linear infinite;
+  animation: tv_content 50s linear infinite;
 }
 
 @keyframes tv_content {
-  from {
+  /* from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(-230%);
+  } */
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-520%);
   }
 }
 
@@ -613,6 +651,25 @@ h3,
     line-height: 24px;
   }
 
+  .show {
+    min-width: 768px;
+  }
+
+  @keyframes tv_content {
+    /* from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-230%);
+    } */
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-420%);
+    }
+  }
+
   /* /////////////////////////////////////////////////////// */
   .products {
     display: flex;
@@ -637,12 +694,42 @@ h3,
 
   /* //////////////////////////////////////////////////// */
 
-  .movie__container__phone {
-    display: none;
+  .panel {
+    width: 689px;
+    height: 368px;
+  }
+  .panel1 {
+    background-image: url(./images/tablet-tedlasso.png);
   }
 
-  .movie__container__tablet {
+  .panel2 {
+    background-image: url(./images/tablet-blitz.png);
+  }
+  .panel3 {
+    background-image: url(./images/tablet-disclaimer.png);
+  }
+  .panel4 {
+    background-image: url(./images/tablet-silo.png);
+  }
+  .panel5 {
+    background-image: url(./images/tablet-bad-sisters.png);
+  }
+  .panel6 {
+    background-image: url(./images/tablet-slow.png);
+  }
+  .panel7 {
+    background-image: url(./images/tablet-bread.png);
+  }
+  .panel8 {
+    background-image: url(./images/tablet-charlie.png);
+  }
+  .panel9 {
     display: flex;
+    background-image: url(./images/tablet-shrinking.png);
+  }
+  .panel10 {
+    display: flex;
+    background-image: url(./images/tablet-season.png);
   }
 }
 
@@ -797,5 +884,24 @@ h3,
   .apple-logo h3,
   .card h3 {
     color: #1d1d1f;
+  }
+
+  .show {
+    min-width: 1024px;
+  }
+
+  @keyframes tv_content {
+    /* from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-230%);
+    } */
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
   }
 }
